@@ -38,7 +38,7 @@ def pollMessage():
 # Use elastic search to collect restaurants id in the cuisine
 def collect_restaurants_id(url, cuisine):
     url += cuisine
-    response = requests.get(url, auth=("master", "coms6998hw1es_Tae")).json()
+    response = requests.get(url, auth=("master", "password")).json()
     results = response['hits']['hits']
     rest_id = []
     for result in results:
